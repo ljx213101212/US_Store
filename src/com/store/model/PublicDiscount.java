@@ -1,0 +1,12 @@
+package com.store.model;
+
+import java.util.Date;
+
+public class PublicDiscount extends Discount {
+
+	public PublicDiscount(String discountCode, String discountDescription,
+			Date startDate, int discountPeriod, float discountPercentage) {
+		super(discountCode, discountDescription, startDate, discountPeriod,
+				discountPercentage);
+	}
+}

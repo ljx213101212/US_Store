@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<file_list>
+	<file id="1001">
+		<filename>Category</filename>
+		<filetype>.dat</filetype>
+	</file>
+
+   <file id="1002">
+		<filename>Discounts</filename>
+		<filetype>.dat</filetype>
+	</file>
+	
+	<file id="1003">
+		<filename>Member</filename>
+		<filetype>.dat</filetype>
+	</file>
+	
+	<file id="1004">
+		<filename>Products</filename>
+		<filetype>.dat</filetype>
+	</file>
+	
+	<file id="1005">
+		<filename>StoreKeepers</filename>
+		<filetype>.dat</filetype>
+	</file>
+	
+	<file id="1006">
+		<filename>Transaction</filename>
+		<filetype>.dat</filetype>
+	</file>
+	
+	<file id="1007">
+		<filename>VendorsMUG</filename>
+		<filetype>.dat</filetype>
+	</file>
+</file_list>
