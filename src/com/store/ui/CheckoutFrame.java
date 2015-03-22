@@ -21,6 +21,8 @@ import javax.swing.WindowConstants;
 import javax.swing.border.LineBorder;
 
 import com.store.main.StoreApplication;
+import com.store.ui.dialog.AddProductDialog;
+import com.store.ui.dialog.AddPurchaseProductDialog;
 import com.store.util.AppConstants;
 import com.store.util.CustomTableModel;
 
@@ -199,11 +201,12 @@ public class CheckoutFrame extends javax.swing.JFrame implements ActionListener 
 						{
 							CustomTableModel itemsTableModel = 
 									new CustomTableModel(
-											new Object[][] { { "One", "Two", "Three", "Four", "Five" } },
-											new String[] { "Product ID", "Name", "Quantity", "Unit", "Price" });
+											null,
+											new String[] { "Product ID", "Name", "Quantity", "Unit Price", "Price" });
 							itemsTable = new JTable();
 							itemsTableScrollPane.setViewportView(itemsTable);
 							itemsTable.setModel(itemsTableModel);
+							
 						}
 					}
 					{
@@ -328,6 +331,11 @@ public class CheckoutFrame extends javax.swing.JFrame implements ActionListener 
 			setVisible(false);
 			dispose();
 		} else if(e.getSource() == addProductButton) {
+			
+			AddPurchaseProductDialog dialog = new AddPurchaseProductDialog(this);
+			dialog.pack();
+			dialog.setVisible(true);
+			
 			
 		} else if(e.getSource() == removeProductButton) {
 			

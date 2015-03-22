@@ -8,6 +8,16 @@ public class Category {
 	private String categoryName;
 	private List<Vendor> vendors;
 
+	
+	/**********2015.3.22***********/
+	
+	public Category(String categoryCode, String categoryName){
+		this.categoryCode = categoryCode;
+		this.categoryName = categoryName;
+		
+	}
+	/***********Modified by Li*********/
+	/**********2015.3.22***********/
 	public Category(String categoryCode, String categoryName,
 			List<Vendor> vendors) {
 		this.categoryCode = categoryCode;

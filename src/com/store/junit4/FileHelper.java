@@ -232,5 +232,27 @@ public class FileHelper {
 	}
 	
 	
+	public String splitBySlash(String s){
+		
+		String frontOfSlash = "";
+		
+		
+	       for (int i = 0 ; i < s.length() ; i++){
+				
+				if (s.charAt(i) == '/'){
+					frontOfSlash = s.substring(0, i);
+					//backOfSlash = s.substring(i+1,s.length());
+					
+					//backOfSlash_int = Integer.parseInt(backOfSlash);
+				}
+			}
+	       
+	       if (frontOfSlash.equals("")){
+	    	   System.out.println("FileHelper splitBySlash , can't find /,Warning! The return is going to be null");
+	       }
+			
+			return frontOfSlash;
+		}
+	
 	
 }
